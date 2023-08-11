@@ -99,7 +99,6 @@ img {
       filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.08));
       box-shadow: none !important; /* cover the Bootstrap 4.6.1 styles */
     }
-
     @extend %img-caption;
   }
 
@@ -1375,6 +1374,13 @@ $btn-mb: 0.5rem;
   footer {
     p {
       width: auto;
+      &:first-child {
+        &::after {
+          content: '-';
+          margin: 0 0.75rem;
+          opacity: 0.8;
+        }
+      }
       &:last-child {
         &::before {
           content: '-';
