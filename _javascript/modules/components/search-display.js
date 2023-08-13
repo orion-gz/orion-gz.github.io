@@ -12,6 +12,7 @@ const $results = $('#search-results');
 const $input = $('#search-input');
 const $hints = $('#search-hints');
 const $viewport = $('html,body');
+const $searchIcon = $('.ico');
 
 // class names
 const C_LOADED = 'loaded';
@@ -86,10 +87,28 @@ function isMobileView() {
 }
 
 export function displaySearch() {
+  /*
   $btnSearchTrigger.on('click', function () {
     MobileSearchBar.on();
     ResultSwitch.on();
     $input.trigger('focus');
+  });
+  */
+
+  $searchIcon.on('click', function() {
+    if ($searchWrapper.hasClass('search-active')) {
+      $searchWrapper.removeClass('search-active');
+      $topbarTitle.removeClass(C_UNLOADED);
+      ResultSwitch.off();
+      $searchIcon.removeClass('fa-solid fa-xmark');
+      $searchIcon.addClass('fa fa-search');
+    } else {
+      $topbarTitle.addClass(C_UNLOADED);
+      ResultSwitch.on();
+      $searchWrapper.addClass('search-active');
+      $searchIcon.removeClass('fa fa-search');
+      $searchIcon.addClass('fa-solid fa-xmark');
+    }
   });
 
   $btnCancel.on('click', function () {

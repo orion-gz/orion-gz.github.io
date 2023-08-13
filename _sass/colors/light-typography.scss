@@ -90,11 +90,19 @@
   --prompt-danger-icon-color: #df3c30;
 
   /* orion-gz Customize */
+  /* prompt color */
   --prompt-success-bg: #1e1e1e;
   --prompt-success-text-color: #ECECEC;
   --prompt-success-icon-color: #0070cb;
   --prompt-failed-bg: rgb(248, 215, 218, 0.56);
   --prompt-failed-icon-color: #df3c30;
+
+  /* search bar color */
+  --search-bg: #07051a;
+  --search-icon-color: #ffffff;
+  --search-active-bg: #ffffff;
+  --search-active-icon-color: #07051a;
+  
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);

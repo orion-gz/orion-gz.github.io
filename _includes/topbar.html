@@ -53,6 +53,7 @@
       {% endif %}
     </div>
 
+    <!--
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
     <span id="search-wrapper" class="align-items-center">
       <i class="fas fa-search fa-fw"></i>
@@ -66,5 +67,18 @@
       >
     </span>
     <span id="search-cancel">{{ site.data.locales[include.lang].search.cancel }}</span>
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <form action="" id="search-wrapper">
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
+      >
+      <i class="ico fa fa-search"></i>
+    </form>
   </div>
 </div>
