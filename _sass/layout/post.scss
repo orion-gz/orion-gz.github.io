@@ -152,102 +152,83 @@ h1 + .post-meta {
       @include btn-sharing-color(rgb(171, 171, 171));
     }
   } /* .share-wrapper */
-
-  $backgroundColor: #e5eef3;
-  $buttonColor: #ffffff;
-  $textColor: #f1ce64;
-  $hoverColor: #fff;
-  $facebook: #3B5998;
-  $twitter: #61c5ec;
-  $google: #ea4335;
-  $github: #000000; 
-  .share {
-    position: absolute;
-    width: 400px;
-    left: 50%;
-    margin-left: -200px;
-    top: 50%;
-    margin-top: -40px;
-    border-radius: 80px;
+  .share-button {
+    width: 200px;
+    height: 50px;
+    background: var(--btn-share-bg);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;
   
-    span {
-      width: 400px;
-      line-height: 80px;
-      display: inline-block;
-      font-weight: 700;
-      text-transform: uppercase;
-      position: absolute;
-      left: 50%;
-      margin-left: -100px;
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-      pointer-events: none;
+    &:hover {
+      transform: scale(1.1);
     }
   
-    nav {
-      font-size: 0;
+    span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--btn-share-cover-bg);
+      color: var(--btn-share-cover-text-color);
+      text-align: center;
+      line-height: 50px;
+      z-index: 999;
+      transition: .6s linear;
+      border-radius: 40px;
+    }
+  
+    &:hover span {
+      transform: translateX(-100%);
+      transition-delay: .3s;
     }
   
     a {
-      line-height: 50px;
-      width: 50px;
+      flex: 1;
+      font-size: 26px;
+      color: var(--btn-icon-color);
       text-align: center;
-      display: inline-block;
-      background-color: $buttonColor;
-      color: $buttonColor;
-      overflow: hidden;
-      opacity: 1;
-      transition: all 0.3s ease-in-out;
-      margin: 0 -20px;
-      box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
-      border-radius: 100px;
-  
-      &:nth-child(1) {
-        border-top-left-radius: 40px;
-        border-bottom-left-radius: 40px;
-        margin-left: 0;
-  
-        &:hover {
-          background-color: rgba(29, 161, 242, 1);
-        }
-      }
-  
-      &:nth-child(2):hover {
-        background-color: rgb(66, 95, 156);
-      }
-  
-      &:nth-child(3):hover {
-        background-color: $google;
-      }
-  
-      &:nth-child(4){
-        border-top-right-radius: 40px;
-        border-bottom-right-radius: 40px;
-        margin-right: 0;
-  
-        &:hover {
-          background-color: $github;
-        }
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: 0.3s linear;
+      padding-bottom: 2.5px;
+    }
+    
+    i {
+      &.fa-fw {
+        text-align: center;
+        font-size:20px;
       }
     }
+
+    &:hover a {
+      opacity: 1;
+      transform: translateX(0);
+    }
   
-    &:hover, &.hover {
-      span {
-        opacity: 0;
+    a {
+      &:nth-of-type(1) {
+        transition-delay: 1s;
       }
   
-      a {
-        border-radius: 50%;
-        margin: 0 10px;
-        color: $textColor;
-        font-size: 28px;
+      &:nth-of-type(2) {
+        transition-delay: 0.8s;
+      }
   
-        &:hover {
-          color: $hoverColor;
-        }
+      &:nth-of-type(3) {
+        transition-delay: 0.6s;
+      }
+  
+      &:nth-of-type(4) {
+        transition-delay: 0.4s;
       }
     }
   }
+  
 }
 
 .post-tags {

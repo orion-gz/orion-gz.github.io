@@ -909,10 +909,23 @@ $btn-mb: 0.5rem;
 }
 
 /* --- top-bar --- */
-
 #topbar-wrapper {
   height: $topbar-height;
   background-color: var(--topbar-bg);
+
+  /*
+  position: fixed;
+  z-index: 200;
+  
+  &.hide {
+    top: -$topbar-height; 
+    transition:bottom .2s;
+  }
+
+  &.show {
+    top: 0; 
+  }
+  */
 }
 
 #topbar {

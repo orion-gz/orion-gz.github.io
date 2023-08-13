@@ -90,6 +90,7 @@
   --prompt-danger-icon-color: #df3c30;
 
   /* orion-gz Customize */
+  
   /* prompt color */
   --prompt-success-bg: #1e1e1e;
   --prompt-success-text-color: #ECECEC;
@@ -103,6 +104,13 @@
   --search-active-bg: #ffffff;
   --search-active-icon-color: #07051a;
   
+  /* shared btn color */
+  --btn-share-bg: #f1f1f1;
+  --btn-share-cover-bg: #2d3436;
+  --btn-share-cover-text-color: #dfe6e9;
+  --btn-icon-color: #2d3436;
+
+  /* orion-gz Customize */
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);
