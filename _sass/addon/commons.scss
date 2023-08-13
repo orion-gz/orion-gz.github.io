@@ -120,7 +120,6 @@ img {
     }
   }
 }
-
 blockquote {
   border-left: 5px solid var(--blockquote-border-color);
   padding-left: 1rem;
@@ -131,6 +130,11 @@ blockquote {
     position: relative;
     padding: 1rem 1rem 1rem 3rem;
     color: var(--prompt-text-color);
+
+    /* orion-gz Customize */
+    &[class^='prompt-success'] {
+      color: var(--prompt-success-text-color);
+    }
 
     @extend %rounded;
 
@@ -150,9 +154,13 @@ blockquote {
   }
 
   @include prompt('tip', '\f0eb', 'regular');
-  @include prompt('info', '\f06a');
+  @include prompt('info', ' \f05a');
   @include prompt('warning', '\f06a');
   @include prompt('danger', '\f071');
+  
+  /* orion-gz Customize */
+  @include prompt('success', '\f00c');
+  @include prompt('failed', '\f00d');
 }
 
 kbd {
@@ -1397,10 +1405,11 @@ $btn-mb: 0.5rem;
     }
   }
 
+  /*
   #search-hints {
     display: none;
   }
-
+  */
   #search-wrapper {
     max-width: $search-max-width;
   }
