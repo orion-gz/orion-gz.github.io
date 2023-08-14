@@ -1549,7 +1549,7 @@ $btn-mb: 0.5rem;
   }
 
   /* orion-gz Customize */
-  /* desktop device topbar width: calc(100vw - $sidebar-width); */
+  /* mobile device(min-width: 992px) topbar width: calc(100vw - $sidebar-width); */
   #topbar-wrapper {
     width: calc(100vw - $sidebar-width);
   }
