@@ -1548,8 +1548,10 @@ $btn-mb: 0.5rem;
     max-width: 96%;
   }
 
+  /* orion-gz Customize */
+  /* desktop device topbar width: calc(100vw - $sidebar-width); */
   #topbar-wrapper {
-    width: 100%;
+    width: calc(100vw - $sidebar-width);
   }
 }
 
