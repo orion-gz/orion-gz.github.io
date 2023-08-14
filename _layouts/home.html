@@ -40,6 +40,8 @@ refactor: true
   {% endfor %}
 {% endif %}
 
+<!-- orion-gz Customize -->
+<!-- home text view -->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <div class="content">
   <div class="content__container">
@@ -55,6 +57,7 @@ refactor: true
     </ul>
   </div>
 </div>
+ <!-- orion-gz Customize -->
 <div id="post-list">
   {% for post in posts %}
     <a href="{{ post.url | relative_url }}" class="card-wrapper">

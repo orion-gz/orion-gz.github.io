@@ -152,6 +152,9 @@ h1 + .post-meta {
       @include btn-sharing-color(rgb(171, 171, 171));
     }
   } /* .share-wrapper */
+
+  /* orion-gz Customize */
+  /* new sharing button */
   .share-button {
     width: 200px;
     height: 50px;
@@ -228,7 +231,7 @@ h1 + .post-meta {
       }
     }
   }
-  
+  /* orion-gz Customize */
 }
 
 .post-tags {

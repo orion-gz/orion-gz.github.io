@@ -95,6 +95,8 @@ export function displaySearch() {
   });
   */
 
+  /* orion-gz Customize */
+  /* onClick events searchBTN */
   $searchIcon.on('click', function() {
     if ($searchWrapper.hasClass('search-active')) {
       $searchWrapper.removeClass('search-active');
@@ -110,6 +112,7 @@ export function displaySearch() {
       $searchIcon.addClass('fa-solid fa-xmark');
     }
   });
+  /* orion-gz Customize */
 
   $btnCancel.on('click', function () {
     MobileSearchBar.off();
