@@ -23,7 +23,7 @@ title: ORION_GZ # the main title
 tagline: Life's like '\0' # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Life's like '\0'
+
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "orion-gz.github.io"
