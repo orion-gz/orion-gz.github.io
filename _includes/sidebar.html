@@ -21,6 +21,16 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
     <div class="site-subtitle fst-italic">{{ site.tagline }}</div>
+
+    <div id="today-count">
+      <a href="https://hits.seeyoufarm.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}"target="_blank">
+        <img 
+            src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}&count_bg=%23000000&title_bg=%23000000&icon=&icon_color=%23FFFFFF&title=Today&edge_flat=true"
+            style="margin-top: 0.5rem;"
+            />
+      </a>
+    </div>
+    
   </div>
   <!-- .profile-wrapper -->
 
