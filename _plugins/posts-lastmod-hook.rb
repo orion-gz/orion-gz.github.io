@@ -11,4 +11,4 @@ Jekyll::Hooks.register :posts, :post_init do |post|
     post.data['last_modified_at'] = lastmod_date
   end
 
-end
+end 
