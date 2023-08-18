@@ -4,12 +4,12 @@ webfonts: /assets/lib/fonts/main.css
 
 # Libraries
 
-jquery:
-  js: /assets/lib/jquery/jquery.min.js
+#jquery:
+#  js: /assets/lib/jquery/jquery.min.js
 
-bootstrap:
-  css: /assets/lib/bootstrap/bootstrap.min.css
-  js: /assets/lib/bootstrap/bootstrap.bundle.min.js
+#bootstrap:
+#  css: /assets/lib/bootstrap/bootstrap.min.css
+#  js: /assets/lib/bootstrap/bootstrap.bundle.min.js
 
 toc:
   css: /assets/lib/tocbot/tocbot.min.css
