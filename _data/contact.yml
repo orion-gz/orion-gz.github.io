@@ -3,6 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
+- type: notion
+  url: http://bit.ly/notion-orion-gz
+
 - type: instagram
   icon: "fab fa-instagram"
   url: https://www.instagram.com/orion_gz
