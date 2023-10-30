@@ -3,7 +3,7 @@ title: Naver AI Rush 2023 앰배서더 선정 그리고 첫번째 밋업
 author: orion
 date: 2023-09-19 16:58:00 +0900
 categories: [Extracurricular, NAVER AI RUSH 2023]
-tags: [naver, clova, hyper clova x, clova studio, ai, chatgpt, bard, 네이버, 클로바, 하이퍼 클로바 X, 클로바 스튜디오]
+tags: [NAVER, NAVER CLOUD, HyperCLOVA X, 생성형 AI, chatgpt, bard, 하이퍼클로바X]
 img_path: /assets/img/posts/2023-09-19/Naver-AI-Rush-1
 ---
 
